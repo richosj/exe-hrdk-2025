@@ -1,0 +1,39 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+
+
+.signup-form{
+    background-color: #ECEEF4;
+    
+}
+.field-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 5.6rem;
+    padding: 0 3.5rem;
+    border-bottom: 2px solid #fff;
+    &:last-child{
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+    .field{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        &:nth-child(even){
+            border-left: 1px solid #fff;
+        }
+        &:nth-child(odd){
+            border-right: 1px solid #fff;
+        }
+        strong.label{
+            flex-shrink: 0;
+            width: 9.5rem;
+            color: #878787;
+        }
+    }
+}
