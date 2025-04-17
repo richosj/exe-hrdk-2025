@@ -56,3 +56,32 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.container {
+  width: 101rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  height: 10rem;
+  background-color: #fff;
+  padding: 0 2.5rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer {
+  background-color: #525252;
+  height: 11rem;
+  padding-top: 3.4rem;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}

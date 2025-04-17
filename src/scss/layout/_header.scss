@@ -3,3 +3,31 @@
 @use '../utils/mixins' as *;
 @use 'sass:map';
 @use 'sass:math';
+
+
+.header{
+    height: 10rem;
+    background-color: #fff;
+    padding: 0 2.5rem;
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &-user{
+        
+    }
+}
+
+.footer{
+    background-color: #525252;
+    height: 11rem;
+    padding-top: 3.4rem;
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
