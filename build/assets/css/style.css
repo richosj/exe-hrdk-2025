@@ -1,6 +1,4 @@
-@import url("font-awesome/css/font-awesome.css");
-@import url("jquery-ui-1.9.2/jquery-ui-1.9.2.custom.css");
-@import url("font/NotoSansKR.css");
+@import url("./bootstrap.min.css");
 
 body,html{font-family: 'Noto Sans KR';}
 #wrap{width: 860px;margin: 0 auto;padding-top: 50px;padding-bottom: 50px;}

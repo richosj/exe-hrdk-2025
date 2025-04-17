@@ -69,7 +69,7 @@ export default defineConfig(({ mode }) => {
           assetFileNames: ({ name }) => {
             if (name && name.endsWith('.css')) return 'assets/css/styles.css';
             return 'assets/[name]';
-          }
+          },
         }
       },
       minify: isLocalBuild ? false : 'esbuild'
