@@ -310,6 +310,7 @@ label {
 
 .signup-form {
   background-color: #ECEEF4;
+  border-top: 2px solid #2764E7;
 }
 .signup-form .input-with-tel,
 .signup-form .input-with-email,
@@ -360,7 +361,6 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 5.6rem;
-  border-bottom: 2px solid #fff;
 }
 .field-row:last-child {
   margin-bottom: 0;
@@ -371,12 +371,6 @@ label {
   height: 100%;
   align-items: center;
   padding: 0 3.5rem;
-}
-.field-row .field:nth-child(even) {
-  border-left: 1px solid #fff;
-}
-.field-row .field:nth-child(odd) {
-  border-right: 1px solid #fff;
 }
 .field-row .field strong.label {
   flex-shrink: 0;
