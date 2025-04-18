@@ -1,0 +1,95 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+
+
+.main{
+    padding: 6rem 0 7rem;
+    //background: url(#{$image-path}/main-bg.png) no-repeat center center / cover;
+    &-container{
+        margin: 0 auto;
+        width: 104rem;
+    }
+    &-banner{
+        margin: 0 auto;
+        background: #2764E7 url(#{$image-path}/main-banner.png) no-repeat center center / cover;
+        border-radius: 3rem;
+        width: 68.8rem;
+        height: 13.3rem;
+        align-items: center;
+        display: flex;
+        padding-left: 5.2rem;
+        &-content{
+            display: flex;
+            align-items: center;
+            gap: 0 2.7rem;
+        }
+        &-title{
+            color: #fff;
+            line-height: 1.24;
+            position: relative;
+            span{font-size: 2.2rem;display: block;}
+            strong{font-size: 2.6rem;display: block;}
+            i{
+                position: absolute;
+                right: -1.25rem;
+                top: 50%;
+                transform: translateY(-50%) translateX(100%);
+                display: inline-block;
+                width: 4.8rem;
+                height: 4.4rem;
+                background: url(#{$image-path}/main-banner-arw.png) no-repeat center center / contain;
+            }
+        }
+    }
+    &-links{
+        margin-top: 5.4rem;
+        &-list{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0 2rem;
+            &-item{
+                background: #fff;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 22rem;
+                justify-content: center;
+                gap:2.4rem 0;
+                span{
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 2.6rem;
+                }
+                a{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    height: 4rem;
+                    width: 100%;
+                    background: #2764E7;
+                    border-radius: 6rem;
+                    color: #fff;
+                    font-size: 1.8rem;
+                    i{
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 3rem;
+                        height: 3rem;
+                        position: absolute;
+                        right: .5rem;
+                        top: .5rem;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
