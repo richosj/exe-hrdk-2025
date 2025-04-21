@@ -17,6 +17,7 @@ html{
 body,th,td,input,select,textarea,button{
   font-size: 1.4rem;
   font-family: "Pretendard", sans-serif;
+  color: #212121;
 }
 
 ul, ol {
@@ -26,7 +27,8 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: inherit;
+  //color: inherit;
+  color: #212121;
 }
 
 img {
@@ -44,6 +46,7 @@ button {
 /* Font settings */
 body {
   font-family: "Pretendard", sans-serif;
+  color: #212121;
 }
 
 

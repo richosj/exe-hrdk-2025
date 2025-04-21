@@ -54,27 +54,49 @@
             &-item{
                 background: #fff;
                 border-radius: 2rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                text-align: center;
+                position: relative;
                 height: 22rem;
                 width: 21.6rem;
-                justify-content: center;
-                gap:2.4rem 0;
                 padding: 0 1.8rem;
+                transition: all 0.5s;
+                &.item1:hover{background: #6DC5DC;}
+                &.item2:hover{background: #6786BF;}
+                &.item3:hover{background: #FF8C68;}
+                &.item4:hover{background: #5BD1A1;}
+                &.item5:hover{background: #CDAC40;}
+                &:hover{
+                    .href{opacity: 0;}
+                    .text{opacity: 1;visibility: visible;}
+                }
+                .text{
+                    color: #212121;
+                    font-size: 1.4rem;
+                    opacity: 0;
+                    font-weight: 600;
+                    visibility: hidden;
+                }
+                .href{
+                    opacity: 1;
+                    position: absolute;
+                    bottom: 5.8rem;
+                    left: 1.8rem;
+                    right: 1.8rem;
+                }
                 span{
+                    display: block;
                     text-align: center;
                     font-weight: 600;
-                    font-size: 2.6rem;
+                    font-size: 2.5rem;
+                    color: #212121;
+                    padding-top: 6rem;
                 }
-                a{
+                div{
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
                     position: relative;
                     height: 4rem;
-                    width: 100%;
-                    background: #2764E7;
                     border-radius: 6rem;
                     color: #fff;
                     font-size: 1.8rem;
@@ -103,7 +125,7 @@
         background: #fff;
         border-radius: 2rem;
         padding:1.6rem 2.4rem;
-        width: 68.8rem;
+        width: 45.2rem;
         height: 24.8rem;
         &-hgroup{
             display: flex;
@@ -140,7 +162,7 @@
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
-                        width: 80%;
+                        width: 100%;
                     }
                     .date{font-size: 1.6rem;color: #C4C4C4;}
                 }
@@ -198,6 +220,39 @@
                     }
                 }
             }
+        }
+    }
+    &-employment{
+        width: 21.6rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        overflow: hidden;
+        background: linear-gradient(180deg, #FFFFFF 0%, #96B7FF 100%);
+        justify-content: space-between;
+        .icon{
+            text-align: center;
+            padding: 3.1rem 0 0;
+        }
+        .text{
+            font-family: Pretendard;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgba(39, 100, 231, 1);
+            transform: translateY(-1rem);
+        }
+        .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(39, 100, 231, 1);
+            color: #fff;
+            height: 5.8rem;
+            font-size: 2rem;
+            font-weight: 700;
         }
     }
 }

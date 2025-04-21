@@ -1,0 +1,82 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+
+
+.course{
+    &-intro{
+        display: flex;
+        padding: 4.6rem 6.3rem;
+        border: 1px solid #eee;
+        gap: 0 6.4rem;
+        margin-bottom: 1.4rem;
+        .image{
+            flex-shrink: 0;
+            width: 370px;
+            height: 257px;
+            overflow: hidden;
+            position: relative;
+            img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+        .details{
+            flex-grow: 1;
+            h3{
+                font-weight: 600;
+                color: #212121;
+                font-size: 2.4rem;
+                padding-bottom: 1.7rem;
+            }
+            .button-group{
+                display: flex;
+                gap: 0 2rem;
+                padding-top: 2rem;
+                .button{
+                    height: 4.8rem;
+                    border-radius: .5rem;
+                    padding: 0 6.1rem;
+                }
+            }
+            ul{
+                li{
+                    display: flex;
+                    gap:0 2.7rem;
+                    font-size: 1.6rem;
+                    span{
+                        display: inline-flex;
+                        align-items: center;
+                        gap:0 .4rem;
+                        &:nth-child(1){
+                            i{
+                                display: inline-block;
+                                width: 2rem;height: 2rem;
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                                &.icon1{background-image: url(#{$image-path}/icon-details-1.png);}
+                                &.icon2{background-image: url(#{$image-path}/icon-details-2.png);}
+                                &.icon3{background-image: url(#{$image-path}/icon-details-3.png);}
+                                &.icon4{background-image: url(#{$image-path}/icon-details-4.png);}
+                            }
+                            font-size: 16px;
+                            line-height: 32px;
+                            letter-spacing: -3%;
+                        }
+                        &:nth-child(2){
+                            font-size: 16px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,310 @@
+<!-- @pageTitle 메인 -->
+<!-- @pageCreated 2024-04-17 -->
+<!-- @pageUpdated 비고 -->
+<!-- @pageNote 레이아웃 구성 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    {{> meta}}
+</head>
+
+<body>
+    {{> header}}
+
+    <div class="banner-renewal">
+        <div class="visually-hidden">상단 배너 영역</div>
+    </div>
+
+    <main id="content" class="sub-page">
+        <div class="visually-hidden">본문 영역</div>
+
+        <nav class="sub-page-nav">
+            <ul>
+                <li class="current"><a href="#">인사담당자(일반)</a></li>
+                <li><a href="#">인사담당자(전문)</a></li>
+                <li><a href="#">평가위원(일반)</a></li>
+                <li><a href="#">평가위원(보수)</a></li>
+                <li><a href="#">CEO 및 임원</a></li>
+                <li><a href="#">나의 학습실</a></li>
+            </ul>
+        </nav>
+
+        <section class="course">
+            <div class="sub-page-container">
+                <div class="page-title">
+                    <h2>인사담당자(일반)</h2>
+                </div>
+                
+                <div class="course-intro">
+                    <div class="image">
+                        <img src="/assets/images/dummy.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>공정채용 (일반) 평가위원 교육</h3>
+                        <ul>
+                            <li>
+                                <span><i class="icon1"></i>교육시간</span>
+                                <span>1DAY 5H (온라인 1H / 오프라인 4H)</span>
+                            </li>
+                            <li>
+                                <span><i class="icon2"></i>교육장소</span>
+                                <span>엑스퍼트러닝센터(송파 / 강남)</span>
+                            </li>
+                            <li>
+                                <span><i class="icon3"></i>교육방식</span>
+                                <span>비대면 및 대면 교육</span>
+                            </li>
+                            <li>
+                                <span><i class="icon4"></i>교  육  비</span>
+                                <span>무료교육</span>
+                            </li>
+                        </ul>
+                        <div class="button-group">
+                            <a href="#" class="button lg blue">과정신청</a>
+                            <a href="#" class="button lg outline">10인 이상 단체과정 신청</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- e: course -->
+
+                <div class="course-content">
+                    이미지 영역
+                </div>
+                <!-- e: course-content -->
+                <div class="course-text-container">
+
+                </div>
+            </div>
+        </section>
+        
+        <div>
+            <p>버튼들 확인용!!!</p>
+            <button class="popup-open" data-target="#popup1">CMS 교육문의</button>
+            <button class="popup-open" data-target="#popup2">수료 확인</button>
+            <button class="popup-open" data-target="#popup3">신청내역 취소</button>
+            <button class="popup-open" data-target="#popup4">로그인</button>
+            <button class="popup-open" data-target="#popup5">아이디 찾기</button>
+            <button class="popup-open" data-target="#popup6">비밀번호 찾기</button>
+            <button class="popup-open" data-target="#popup7">아이디 찾기 완료</button>
+        </div>
+    </main>
+    {{> footer}}
+
+    <div class="popup" id="popup1">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-inquiry-title">
+                    <h3><b>CMS교육문의 내용</b>(최대 500자 이내)</h3>
+                </div>
+                <div class="popup-textarea">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button>확인</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-inquiry-title">
+                    <h3><b>해당 신청내역을 취소하시겠습니까?</b><br><span>기존 학습 진도율은 삭제됩니다.</span></h3>
+                </div>
+                <div class="popup-del-content">
+                    
+                    <select name="" id="" class="form-select">
+                        <option value="">사유를 선택해주세요.</option>
+                    </select>
+                    <div class="popup-textarea">
+                        <textarea placeholder="기타사유 선택시 인풋"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button>확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup3">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-title">
+                    <h3>과정 수료조건을 확인하셨나요?</h3>
+                </div>
+                <div class="popup-confirm">
+                    1. 오프라인 교육 전 <span>이러닝 선행 수강</span><br>
+                    2. 전체 교육 <span>수료율 80% 이상</span><br>
+                    3. 오프라인 교육 <span>종료 후 만족도 조사</span>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button>확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup4">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-login">
+                    <div class="popup-login-title">
+                        <i><img src="/assets/images/login-icon.png" alt=""></i>
+                        로그인 <span>Login</span>
+                    </div>
+                    <div class="popup-login-row">
+                        <input type="text" class="form-input" placeholder="아이디">
+                    </div>
+                    <div class="popup-login-row mb0">
+                        <input type="password" class="form-input" placeholder="비밀번호">
+                    </div>
+                    <div class="popup-login-btn">
+                        <button class="button blue round lg login-submit">로그인</button>
+                        <a href="#" class="button outline round lg sign-btn">회원가입</a>
+                    </div>
+                    <div class="lost-link">
+                        <a href="#">아이디 찾기</a>
+                        <span class="line"></span>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+                <!-- e: popup-login -->
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup5">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-lost">
+                    <div class="popup-lost-title">아이디 찾기</div>
+                    <div class="popup-lost-row">
+                        <strong>성함</strong>
+                        <input type="text" class="form-input" placeholder="성함">
+                    </div>
+                    <div class="popup-lost-row mb0">
+                        <strong>가입시<br>이메일</strong>
+                        <div class="lost-width-mail">
+                            <input type="text" class="form-input" placeholder="이메일">
+                            <span>@</span>
+                            <select name="" id="" class="form-select">
+                                <option value="">naver.com</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-lost-btn">
+                        <button class="button blue round lg">아이디찾기</button>
+                    </div>
+                    <div class="lost-link">
+                        <a href="#">아이디 찾기</a>
+                        <span class="line"></span>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+                <!-- e: popup-login -->
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup6">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-lost">
+                    <div class="popup-lost-title">비밀번호 찾기</div>
+                    <div class="popup-lost-row">
+                        <strong>아이디</strong>
+                        <input type="text" class="form-input" placeholder="아이디">
+                    </div>
+                    <div class="popup-lost-row">
+                        <strong>성함</strong>
+                        <input type="text" class="form-input" placeholder="성함">
+                    </div>
+                    <div class="popup-lost-row mb0">
+                        <strong>가입시<br>핸드폰번호</strong>
+                        <div class="lost-width-phone">
+                            <input type="text" class="form-input">
+                            <span>-</span>
+                            <input type="text" class="form-input">
+                            <span>-</span>
+                            <input type="text" class="form-input">
+                        </div>
+                    </div>
+                    <div class="popup-lost-btn">
+                        <button class="button blue round lg">비밀번호 문자전송</button>
+                    </div>
+                    <!-- <div class="lost-link">
+                        <a href="#">아이디 찾기</a>
+                        <span class="line"></span>
+                        <a href="#">비밀번호 찾기</a>
+                    </div> -->
+                </div>
+                <!-- e: popup-login -->
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup7">
+        <div class="popup-container">
+            <div class="popup-header">
+                <button class="popup-close">닫기</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-lost-ending">
+                    <div class="ments">
+                        가입하신 아이디 정보는<br>
+                        <b>OOO</b>입니다.
+                    </div>
+                    
+                    <div class="popup-fn-btn">
+                        <a href="#" class="button blue round lg">로그인 하기</a>
+                        <a href="#" class="button round lg outline">비밀번호 찾기</a>
+                    </div>
+                </div>
+                <!-- e: popup-login -->
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="/js/main.js"></script>
+    <script>
+        // 열기
+        document.querySelectorAll('.popup-open').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.target
+                document.querySelector(target).style.display = 'block'
+            })
+        })
+
+        // 닫기
+        document.querySelectorAll('.popup-close').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const popup = btn.closest('.popup')
+                popup.style.display = 'none'
+            })
+        })
+
+    </script>
+</body>
+
+</html>
